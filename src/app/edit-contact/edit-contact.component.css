@@ -124,3 +124,24 @@ section div em {
 .buttons * {
   flex: 1 1 auto;
 }
+
+input[type="range"] {
+  -webkit-appearance: none;
+  border: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -6px; /* 依照 track 高度微調 */
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #ddd;
+  border-radius: 2px;
+}
